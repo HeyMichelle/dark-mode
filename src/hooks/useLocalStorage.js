@@ -32,6 +32,17 @@ export function useLocalStorage(key, initialValue) {
 // }
 
 
+// const [storedValue, setStoredValue] = useState(() => {
+//     // Is the item in local storage?
+//     if (window.localStorage.getItem(key)) {
+//       // if yes, intialize useState with it
+//       return JSON.parse(window.localStorage.getItem(key));
+//     }
+//     // otherwise, take our initial value and save it to localStorage
+//     window.localStorage.setItem(key, JSON.stringify(initialValue));
+//     return initialValue;
+//   });
+
 
 // - We're going to set up some state here. Set up a state property called storedValue.
 //   - This state property is going to take a function as it's initial value. When we do this, whatever that callback function returns is what gets set as the intialValue for the state property.
